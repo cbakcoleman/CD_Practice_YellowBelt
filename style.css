@@ -1,0 +1,34 @@
+/*-----------------------WHOLE-----------------------*/
+#whole{
+    width: 70%;
+    font-family: sans-serif;
+    justify-self: center;
+}
+.deleteLater{
+    border: 2px dotted red;
+}
+.pad{
+    padding: 10px;
+}
+/*-----------------------TOP-----------------------*/
+.top{
+    display: inline-flexbox;
+    background-color: rebeccapurple;
+}
+.nav{
+    width: 100%;
+    display: inline-block;
+}
+.headerButton {
+    width: 20px;
+    height: 20px;
+}
+
+/*-----------------------LEFT-----------------------*/
+.left{
+
+}
+/*-----------------------RIGHT-----------------------*/
+.right{
+
+}
