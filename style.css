@@ -1,3 +1,4 @@
+/*-------------------OVERALL-------------------*/
 *{
     padding: 0;
     margin: 0;
@@ -11,4 +12,54 @@
 .whole{
     width: 70%;
     height: 100%;
+    background-color:lemonchiffon;
+    font-family: sans-serif;
+}
+.justify-center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between
+}
+.pad-thick{
+    padding: 30px;
+}
+.margin-reg{
+    margin: 10px;
+}
+.border-reg{
+    border: 1px solid darkslategray;
+}
+
+/*-------------------TOP-------------------*/
+.header{
+    display: inline-flexbox;
+    height: 100px;
+    align-items: center;
+    background-color: orchid;
+}
+.buttons{
+    width: 300px;
+    padding: 10px;
+}
+.buttons button{
+    background-color: chartreuse;
+    border-radius: 25%;
+    font-size: 30px;
+}
+.search{
+    height: 200px;
+    width: 100%;
+    background-color: rebeccapurple;
+    align-items: center;
+}
+
+.searchbar{
+    height: 50px; 
+    width: 400px;
+    margin-left: 20px;
+}
+.search img{
+    height: 100px;
+    width: 100px;
 }
