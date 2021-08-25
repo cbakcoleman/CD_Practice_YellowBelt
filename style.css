@@ -21,14 +21,29 @@
 .space-between{
     justify-content: space-between
 }
+.align-items{
+    align-items: baseline;
+}
 .pad-thick{
     padding: 30px;
+}
+.margin-thick{
+    margin: 30px;
 }
 .margin-reg{
     margin: 10px;
 }
 .border-reg{
     border: 1px solid darkslategray;
+}
+.italic{
+    font-style: italic;
+}
+.largeFont{
+    font-size: 30px;
+}
+.regularFont{
+    font-size: 20px;
 }
 
 /*-------------------TOP-------------------*/
@@ -45,7 +60,7 @@
 .buttons button{
     background-color: chartreuse;
     border-radius: 25%;
-    font-size: 30px;
+    padding: 10px;
 }
 .search{
     height: 200px;
@@ -53,7 +68,6 @@
     background-color: rebeccapurple;
     align-items: center;
 }
-
 .searchbar{
     height: 50px; 
     width: 400px;
@@ -62,4 +76,26 @@
 .search img{
     height: 100px;
     width: 100px;
+}
+
+/*-------------------MAIN-------------------*/
+.col-3{
+    flex: 2;
+}
+.col-2{
+    flex: 1;
+}
+
+/*-------------------LEFT-------------------*/
+.recipe img{
+    width: 100%;
+    margin-top: 50px;
+}
+.likes{
+    width: 200px;
+}
+.likes button{
+    background-color: chartreuse;
+    border-radius: 25%;
+    width: 40px;
 }
