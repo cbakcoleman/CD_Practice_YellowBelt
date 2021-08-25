@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container justify-center">
-    <div class="whole largeFont deleteLater">
-        <div class="header  container space-between pad-thick largeFont deleteLater">
+    <div class="whole largeFont">
+        <div class="header  container space-between pad-thick largeFont">
             <h1>Iggy's Ninja Recipes</h1>
             <div class="buttons container justify-center">
-                <button class="border-reg margin-reg largeFont">Recipes</button>
-                <button class="border-reg margin-reg largeFont">Login</button>
+                <button class="border-reg margin-reg largeFont"
+                    onclick="noRecipes(this)">Recipes</button>
+                <button class="border-reg margin-reg largeFont"
+                    onclick="remove(this)">Login</button>
             </div>        
         </div>
 
-        <div class="search container space-between deleteLater">
+        <div class="search container space-between">
             <input class="searchbar border-reg margin-reg" type="text" 
-            placeholder="What would you like to make today?">
+                placeholder="What would you like to make today?" id="search">
+                <button onclick=search()>Search!</button>
             <div>
                 <img class="border-reg margin-reg" 
                     src="artieStew.jpg" alt="cat in stewpot">
@@ -30,16 +33,30 @@
             </div>
         </div>
 
-        <div class="main container deleteLater">
-            <div class="col-3 margin-reg deleteLater">
+        <div class="main container">
+            <div class="col-3 margin-reg">
                 <h1>Iggy's Favorite Recipe:</h1>
                 <div class="recipe">
                     <img src="http://placekitten.com/700/500" alt="">
                     <div class="container space-between margin-thick align-items">
                         <h2>Hummingbird Cake</h2>
                         <div class="container space-between likes">
-                            <p><span>0</span> like(s)</p>
-                            <button>&#127829</button>
+                            <p><span id="counter1">0</span> like(s)</p>
+                            <button onclick="addLikes('#counter1')">&#127829</button>
+                        </div>                       
+                    </div>
+                    <p>This recipe makes cake out of 
+                        <span class="italic">real</span> hummingbirds!</p>
+                </div>
+                <h1>ooh cake!</h1>
+                <div class="recipe">
+                    <video class="video" src="Hummingbird.mp4" 
+                        type="video/mp4 preload="auto controls muted></video>
+                    <div class="container space-between margin-thick align-items">
+                        <h2>Hummingbird Cake</h2>
+                        <div class="container space-between likes">
+                            <p><span id="counter2">0</span> like(s)</p>
+                            <button onclick="addLikes('#counter2')">&#127829</button>
                         </div>                       
                     </div>
                     <p>This recipe makes cake out of 
@@ -47,46 +64,44 @@
                 </div>
             </div>
             
-
-
-            <div class="col-2 margin-reg deleteLater">
-                <div class="margin-reg regularFont deleteLater">
+            <div class="col-2 margin-reg">
+                <div class="margin-reg regularFont">
                     <h1>Iggy's Favorite Recipe:</h1>
                     <div class="recipe">
                         <img src="http://placekitten.com/700/500" alt="">
                         <div class="container space-between margin-thick align-items">
                             <h2>Hummingbird Cake</h2>
                             <div class="container space-between likes">
-                                <p><span>0</span> like(s)</p>
-                                <button>&#127829</button>
+                                <p><span id="counter3">0</span> like(s)</p>
+                                <button onclick="addLikes('#counter3')">&#127829</button>
                             </div>                       
                         </div>
                         <p>This recipe makes cake out of 
                             <span class="italic">real</span> hummingbirds!</p>
                 </div>
-                <div class="margin-reg regularFont deleteLater">
+                <div class="margin-reg regularFont">
                     <h1>Iggy's Favorite Recipe:</h1>
                     <div class="recipe">
                         <img src="http://placekitten.com/700/500" alt="">
                         <div class="container space-between margin-thick align-items">
                             <h2>Hummingbird Cake</h2>
                             <div class="container space-between likes">
-                                <p><span>0</span> like(s)</p>
-                                <button>&#127829</button>
+                                <p><span id="counter4">0</span> like(s)</p>
+                                <button onclick="addLikes('#counter4')">&#127829</button>
                             </div>                       
                         </div>
                         <p>This recipe makes cake out of 
                             <span class="italic">real</span> hummingbirds!</p>
                 </div>
-                <div class="margin-reg regularFont deleteLater">
+                <div class="margin-reg regularFont">
                     <h1>Iggy's Favorite Recipe:</h1>
                     <div class="recipe">
                         <img src="http://placekitten.com/700/500" alt="">
                         <div class="container space-between margin-thick align-items">
                             <h2>Hummingbird Cake</h2>
                             <div class="container space-between likes">
-                                <p><span>0</span> like(s)</p>
-                                <button>&#127829</button>
+                                <p><span id="counter5">0</span> like(s)</p>
+                                <button onclick="addLikes('#counter5')">&#127829</button>
                             </div>                       
                         </div>
                         <p>This recipe makes cake out of 

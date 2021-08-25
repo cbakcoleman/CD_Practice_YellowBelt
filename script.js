@@ -4,19 +4,19 @@ function addLikes(id){
     document.querySelector(id).innerHTML = count+1;
 }
 
-//change text
-function logout(e) {
-    e.innerText = "Logout"
+//change text  xx
+function noRecipes(e) {
+    e.innerText = "No recipes for you!"
 }
 
-//remove
+//remove    xx
 function remove(e) {
     e.remove();
 }
 
-//search alert
+//search alert     xx
 function search(){
-    var input = document.querySelector("#search").nodeValue;
+    var input = document.querySelector("#search").value;
     alert(`You have searched for ${input}`)
 }
 
